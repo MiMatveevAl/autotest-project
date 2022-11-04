@@ -15,6 +15,8 @@ public class TestReport implements EventListener {
 
     @Override
     public void setEventPublisher(EventPublisher eventPublisher) {
-
+        if (!ReportConfig.isConfigured()) {
+            return;
+        }
     }
 }

@@ -8,7 +8,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "classpath:features",
         plugin = {
-                "pretty"
+                "pretty",
+                "mi.matveev.test.report.module.TestReport"
         },
         glue = {
                 "cucumber.api.spring",

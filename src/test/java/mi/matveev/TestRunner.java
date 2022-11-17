@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         features = "classpath:features",
         plugin = {
                 "pretty",
-                "mi.matveev.test.report.module.TestReport"
+                "mi.matveev.test.report.TestReport"
         },
         glue = {
                 "cucumber.api.spring",
